@@ -1,0 +1,14 @@
+/* LAYOUT */
+
+.container {
+  max-width: 1480px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

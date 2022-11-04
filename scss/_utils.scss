@@ -1,0 +1,47 @@
+@import "_variables.scss";
+
+.disabled-scroll {
+  overflow: hidden;
+}
+
+hr {
+  width: 100%;
+  color: $grey;
+  background-color: $grey;
+  border: none;
+  height: 2px;
+}
+
+/* BUTTONS */
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  color: $white;
+
+  &__learn-more {
+    padding: 16px 32px;
+    background-color: transparent;
+    border: 2px solid $white;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+
+    &:hover {
+      color: $yellow;
+      border-color: $yellow;
+    }
+  }
+
+  &__subscribe {
+    height: 41px;
+    background-color: $turquoise;
+    border: none;
+    padding: 16px 34px;
+
+    &:hover {
+      background-color: $dark-turqoise;
+    }
+  }
+}
