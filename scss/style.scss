@@ -159,7 +159,7 @@ header {
       rgba(243, 129, 129, 0.8),
       rgba(252, 227, 138, 0.8)
     ),
-    url("../assets/images/eagle.png");
+    url("assets/images/eagle.png");
   background-size: cover;
   background-position: center;
   margin-bottom: 80px;
@@ -215,7 +215,7 @@ header {
   position: relative;
 
   &__matthew {
-    background-image: url("../assets/images/matthew.png");
+    background-image: url("assets/images/matthew.png");
     background-position-x: 20%;
 
     &:hover {
@@ -224,13 +224,13 @@ header {
           rgba(243, 129, 129, 0.85),
           rgba(252, 227, 138, 0.85)
         ),
-        url("../assets/images/matthew.png");
+        url("assets/images/matthew.png");
       transform: translate(-10px, -10px);
     }
   }
 
   &__christopher {
-    background-image: url("../assets/images/christopher.png");
+    background-image: url("assets/images/christopher.png");
     background-position-y: bottom;
     background-position-x: center;
 
@@ -240,13 +240,13 @@ header {
           rgba(243, 129, 129, 0.85),
           rgba(252, 227, 138, 0.85)
         ),
-        url("../assets/images/christopher.png");
+        url("assets/images/christopher.png");
       transform: translate(-10px, -10px);
     }
   }
 
   &__michael {
-    background-image: url("../assets/images/michael.png");
+    background-image: url("assets/images/michael.png");
     background-position-x: center;
 
     &:hover {
@@ -255,7 +255,7 @@ header {
           rgba(243, 129, 129, 0.85),
           rgba(252, 227, 138, 0.85)
         ),
-        url("../assets/images/michael.png");
+        url("assets/images/michael.png");
       transform: translate(-10px, -10px);
     }
   }
