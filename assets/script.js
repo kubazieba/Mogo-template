@@ -17,8 +17,27 @@ $(document).ready(function() {
         $('body').toggleClass('disabled-scroll');
         $('.navbar .menu li a').on('click', function() {
             $('.menu-mobile').trigger('click');
-        })
-    })
+        });
+    });
+
+    /* SHOW SOCIAL MEDIA BAR */
+    $('.team-image__matthew').on('mouseover', function() {
+        $('.team-image__matthew .social-media').css("opacity", "1");
+    }).mouseleave(function() {
+        $('.team-image__matthew .social-media').css("opacity", "0");
+    });
+    
+    $('.team-image__christopher').on('mouseover', function() {
+        $('.team-image__christopher .social-media').css("opacity", "1");
+    }).mouseleave(function() {
+        $('.team-image__christopher .social-media').css("opacity", "0");
+    });
+
+    $('.team-image__michael').on('mouseover', function() {
+        $('.team-image__michael .social-media').css("opacity", "1");
+    }).mouseleave(function() {
+        $('.team-image__michael .social-media').css("opacity", "0");
+    });
 });
 
 function stickyNav() {

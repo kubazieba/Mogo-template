@@ -1,7 +1,47 @@
 @import "_variables.scss";
 
-.disabled-scroll {
-  overflow: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: $white;
+  color: $light-black;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: $black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
 }
 
 hr {
@@ -10,6 +50,70 @@ hr {
   background-color: $grey;
   border: none;
   height: 2px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.disabled-scroll {
+  overflow: hidden;
+}
+
+/* TEXT AND LABELS */
+
+.label {
+  color: $white;
+
+  &--black {
+    color: $black;
+  }
+
+  &__title {
+    font-family: "Kaushan Script", cursive;
+    font-size: 48px;
+    line-height: 36px;
+    padding-bottom: 22px;
+    text-align: center;
+
+    @media (min-width: $bp-1000) {
+      font-size: 72px;
+      line-height: 72px;
+      padding-bottom: 50px;
+    }
+
+    &--small {
+      font-size: 24px;
+      line-height: 24px;
+      padding: 22px;
+    }
+  }
+
+  &__welcome {
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 700;
+    padding-bottom: 36px;
+    max-width: 849px;
+
+    @media (min-width: $bp-1000) {
+      font-size: 150px;
+      line-height: 140px;
+      padding-bottom: 100px;
+    }
+  }
+}
+
+.name {
+  line-height: 14px;
+}
+
+.description {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  padding-top: 18px;
+  color: $grey;
 }
 
 /* BUTTONS */
@@ -24,7 +128,6 @@ hr {
     padding: 16px 32px;
     background-color: transparent;
     border: 2px solid $white;
-    font-size: 14px;
     line-height: 14px;
     font-weight: 700;
 
@@ -37,11 +140,25 @@ hr {
   &__subscribe {
     height: 41px;
     background-color: $turquoise;
+    font-weight: 700;
+    line-height: 14px;
     border: none;
-    padding: 16px 34px;
+    padding: 12px 34px;
 
     &:hover {
       background-color: $dark-turqoise;
     }
   }
+}
+
+/* INPUTS */
+
+input:focus {
+  outline: none;
+}
+
+/* MARGINS AND PADDINGS */
+
+.mb-90 {
+  margin-bottom: 90px;
 }

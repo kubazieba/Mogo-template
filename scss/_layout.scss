@@ -1,8 +1,7 @@
 /* LAYOUT */
 
 .container {
-  max-width: 1480px;
-  padding: 0 40px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -11,4 +10,22 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 100px;
+
+  @media (max-width: $bp-tablet) {
+    row-gap: 40px;
+  }
+}
+
+.welcome-container {
+  padding-top: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }

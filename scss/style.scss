@@ -3,67 +3,6 @@
 @import "_layout.scss";
 @import "_utils.scss";
 
-// font-family: 'Kaushan Script', cursive;
-
-// font-family: 'Roboto', sans-serif;
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background: $white;
-  color: $black;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-a {
-  color: $black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-a:hover {
-  color: $black;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-p {
-  margin: 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
 /* NAVBAR */
 
 .navbar {
@@ -76,7 +15,7 @@ p {
 
 .navbar.sticky {
   padding: 15px 0;
-  background: rgba(243, 129, 129, 0.5);
+  background: rgba(243, 129, 129, 0.7);
   border-bottom: 2px solid $yellow;
 }
 
@@ -100,17 +39,16 @@ p {
 .navbar .menu li {
   list-style: none;
   display: inline-block;
+  margin-left: 50px;
 
   @media (max-width: 1000px) {
     display: block;
+    margin-left: 0;
   }
 }
 
 .navbar .menu li a {
   color: $white;
-  font-size: 14px;
-  font-weight: 400;
-  margin-left: 25px;
   position: relative;
 
   &:hover {
@@ -123,7 +61,7 @@ p {
     display: block;
     width: 100%;
     height: 2px;
-    bottom: -3px;
+    bottom: -6px;
     left: 0;
     background-color: $yellow;
     transform: scaleX(0);
@@ -147,14 +85,25 @@ p {
   max-width: 18px;
   min-height: 18px;
   max-height: 18px;
+  filter: invert(100%) sepia(0%) saturate(1078%) hue-rotate(358deg)
+    brightness(113%) contrast(100%);
+
+  &:hover {
+    filter: invert(83%) sepia(38%) saturate(467%) hue-rotate(347deg)
+      brightness(103%) contrast(102%);
+  }
 
   @media (max-width: 1000px) {
     display: none;
   }
 }
 
+.navbar .menu li:first-child {
+  margin-left: 0;
+}
+
 .navbar .logo .greyer {
-  color: $grey;
+  color: $light-grey;
   margin-left: 5px;
 }
 
@@ -212,52 +161,178 @@ header {
     ),
     url("../assets/images/eagle.png");
   background-size: cover;
+  background-position: center;
+  margin-bottom: 80px;
 }
 
-.welcome-container {
-  padding-top: 150px;
+/* MAIN */
+
+#services .grid-container {
+  margin-bottom: 100px;
+
+  @media (max-width: $bp-tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: $bp-500) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.service-item {
+  padding: 0 30px;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+}
+
+.service-item img {
+  min-width: 32px;
+  max-width: 32px;
+  min-height: 32px;
+  max-height: 32px;
+  margin-right: 28px;
+}
+
+#team .grid-container {
+  column-gap: 28px;
+  margin-bottom: 80px;
+
+  @media (max-width: $bp-tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.team-item {
   text-align: center;
 }
 
-.label {
-  color: $white;
+.team-image {
+  background-repeat: no-repeat;
+  background-color: $turquoise;
+  width: 100%;
+  min-height: 471px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  position: relative;
 
-  &__title {
-    font-family: "Kaushan Script", cursive;
-    font-size: 48px;
-    line-height: 36px;
-    font-weight: 400;
-    padding-bottom: 22px;
+  &__matthew {
+    background-image: url("../assets/images/matthew.png");
+    background-position-x: 20%;
 
-    @media (min-width: 1000px) {
-      font-size: 72px;
-      line-height: 72px;
-      padding-bottom: 50px;
+    &:hover {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(243, 129, 129, 0.85),
+          rgba(252, 227, 138, 0.85)
+        ),
+        url("../assets/images/matthew.png");
+      transform: translate(-10px, -10px);
     }
   }
 
-  &__welcome {
-    font-size: 72px;
-    line-height: 72px;
-    font-weight: 700;
-    padding-bottom: 36px;
-    max-width: 849px;
+  &__christopher {
+    background-image: url("../assets/images/christopher.png");
+    background-position-y: bottom;
+    background-position-x: center;
 
-    @media (min-width: 1000px) {
-      font-size: 150px;
-      line-height: 140px;
-      padding-bottom: 100px;
+    &:hover {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(243, 129, 129, 0.85),
+          rgba(252, 227, 138, 0.85)
+        ),
+        url("../assets/images/christopher.png");
+      transform: translate(-10px, -10px);
     }
   }
 
-  &--black {
-    color: $black;
+  &__michael {
+    background-image: url("../assets/images/michael.png");
+    background-position-x: center;
+
+    &:hover {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(243, 129, 129, 0.85),
+          rgba(252, 227, 138, 0.85)
+        ),
+        url("../assets/images/michael.png");
+      transform: translate(-10px, -10px);
+    }
   }
 }
 
+.social-media {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  opacity: 0;
+
+  & i {
+    min-width: 57px;
+    max-width: 57px;
+    min-height: 57px;
+    height: 57px;
+    max-height: 57px;
+    font-size: 26px;
+    line-height: 57px;
+  }
+
+  &__facebook {
+    color: $pink;
+    background-color: $yellow;
+    transition: all 0.3s ease;
+    border-right: 1px solid $pink;
+
+    &:hover {
+      color: white;
+      background-color: $pink;
+    }
+  }
+
+  &__twitter {
+    color: $pink;
+    background-color: $yellow;
+    transition: all 0.3s ease;
+    border-right: 1px solid $pink;
+
+    &:hover {
+      color: white;
+      background-color: $pink;
+    }
+  }
+
+  &__pinterest {
+    color: $pink;
+    background-color: $yellow;
+    transition: all 0.3s ease;
+    border-right: 1px solid $pink;
+
+    &:hover {
+      color: white;
+      background-color: $pink;
+    }
+  }
+
+  &__instagram {
+    color: $pink;
+    background-color: $yellow;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: white;
+      background-color: $pink;
+    }
+  }
+}
+
+#team .description:last-child {
+  font-weight: 300;
+  font-style: italic;
+  padding-top: 14px;
+}
 
 /* FOOTER */
 
@@ -267,13 +342,40 @@ footer .container {
   align-items: center;
 }
 
+footer .footer-name {
+  color: $black;
+}
+
 .newsletter {
   display: flex;
+  padding: 10px 0;
 }
 
 .newsletter input {
   border-radius: 0;
   padding: 14px;
-  border-color: $grey;
+  border-color: $light-grey;
   max-height: 41px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+
+section .title::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  bottom: -40px;
+  left: 50%;
+  height: 3px;
+  background: $pink;
+  transform: translateX(-50%);
 }
