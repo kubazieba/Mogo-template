@@ -390,7 +390,7 @@ input:focus {
     height: 100vh;
     width: 100%;
     left: 0;
-    top: -100%;
+    top: -150%;
     text-align: center;
     padding-top: 100px;
     transition: all 0.3s ease;
@@ -463,15 +463,16 @@ header {
   /* line 197, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
   #team .grid-container {
     grid-template-columns: 1fr;
+    margin-bottom: 32px;
   }
 }
 
-/* line 206, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 207, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .team-item {
   text-align: center;
 }
 
-/* line 210, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 211, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .team-image {
   background-repeat: no-repeat;
   background-color: #95e1d3;
@@ -482,44 +483,44 @@ header {
   position: relative;
 }
 
-/* line 219, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 220, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .team-image__matthew {
   background-image: url("assets/images/matthew.png");
   background-position-x: 20%;
 }
 
-/* line 223, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 224, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .team-image__matthew:hover {
   background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.85), rgba(252, 227, 138, 0.85)), url("assets/images/matthew.png");
   transform: translate(-10px, -10px);
 }
 
-/* line 234, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 235, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .team-image__christopher {
   background-image: url("assets/images/christopher.png");
   background-position-y: bottom;
   background-position-x: center;
 }
 
-/* line 239, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 240, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .team-image__christopher:hover {
   background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.85), rgba(252, 227, 138, 0.85)), url("assets/images/christopher.png");
   transform: translate(-10px, -10px);
 }
 
-/* line 250, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 251, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .team-image__michael {
   background-image: url("assets/images/michael.png");
   background-position-x: center;
 }
 
-/* line 254, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 255, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .team-image__michael:hover {
   background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.85), rgba(252, 227, 138, 0.85)), url("assets/images/michael.png");
   transform: translate(-10px, -10px);
 }
 
-/* line 266, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 267, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .social-media {
   display: none;
   position: absolute;
@@ -529,7 +530,7 @@ header {
   cursor: pointer;
 }
 
-/* line 274, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 275, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .social-media i {
   min-width: 57px;
   max-width: 57px;
@@ -540,7 +541,7 @@ header {
   line-height: 57px;
 }
 
-/* line 284, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 285, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .social-media__facebook {
   color: #f38181;
   background-color: #fce38a;
@@ -548,13 +549,13 @@ header {
   border-right: 1px solid #f38181;
 }
 
-/* line 290, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 291, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .social-media__facebook:hover {
   color: white;
   background-color: #f38181;
 }
 
-/* line 296, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 297, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .social-media__twitter {
   color: #f38181;
   background-color: #fce38a;
@@ -562,13 +563,13 @@ header {
   border-right: 1px solid #f38181;
 }
 
-/* line 302, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 303, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .social-media__twitter:hover {
   color: white;
   background-color: #f38181;
 }
 
-/* line 308, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 309, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .social-media__pinterest {
   color: #f38181;
   background-color: #fce38a;
@@ -576,34 +577,46 @@ header {
   border-right: 1px solid #f38181;
 }
 
-/* line 314, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 315, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .social-media__pinterest:hover {
   color: white;
   background-color: #f38181;
 }
 
-/* line 320, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 321, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .social-media__instagram {
   color: #f38181;
   background-color: #fce38a;
   transition: all 0.3s ease;
 }
 
-/* line 325, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 326, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .social-media__instagram:hover {
   color: white;
   background-color: #f38181;
 }
 
-/* line 332, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 333, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 #team .description:last-child {
   font-weight: 300;
   font-style: italic;
   padding-top: 14px;
 }
 
+/* line 339, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+#team hr {
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  /* line 339, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+  #team hr {
+    margin-bottom: 0;
+  }
+}
+
 /* FOOTER */
-/* line 340, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 349, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 footer .container {
   display: flex;
   flex-direction: column;
@@ -611,19 +624,19 @@ footer .container {
 }
 
 @media (min-width: 768px) {
-  /* line 340, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+  /* line 349, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
   footer .container {
     justify-content: space-between;
     flex-direction: row;
   }
 }
 
-/* line 351, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 360, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 footer .footer-name {
   color: #000000;
 }
 
-/* line 355, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 364, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .newsletter {
   display: flex;
   flex-direction: column;
@@ -631,13 +644,13 @@ footer .footer-name {
 }
 
 @media (min-width: 400px) {
-  /* line 355, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+  /* line 364, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
   .newsletter {
     flex-direction: row;
   }
 }
 
-/* line 365, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 374, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .newsletter input {
   border-radius: 0;
   padding: 14px;
@@ -649,13 +662,13 @@ footer .footer-name {
 }
 
 @media (min-width: 400px) {
-  /* line 365, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+  /* line 374, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
   .newsletter input {
     margin-bottom: 0;
   }
 }
 
-/* line 379, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 388, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 section .title {
   position: relative;
   text-align: center;
@@ -665,7 +678,7 @@ section .title {
   margin-bottom: 100px;
 }
 
-/* line 388, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 397, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 section .title::before {
   content: "";
   position: absolute;

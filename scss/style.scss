@@ -135,7 +135,7 @@
     height: 100vh;
     width: 100%;
     left: 0;
-    top: -100%;
+    top: -150%;
     text-align: center;
     padding-top: 100px;
     transition: all 0.3s ease;
@@ -200,6 +200,7 @@ header {
 
   @media (max-width: $bp-tablet) {
     grid-template-columns: 1fr;
+    margin-bottom: 32px;
   }
 }
 
@@ -333,6 +334,14 @@ header {
   font-weight: 300;
   font-style: italic;
   padding-top: 14px;
+}
+
+#team hr {
+  margin-bottom: 24px;
+
+  @media (min-width: $bp-tablet) {
+    margin-bottom: 0;
+  }
 }
 
 /* FOOTER */
