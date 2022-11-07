@@ -276,13 +276,12 @@ header {
     min-width: 57px;
     max-width: 57px;
     min-height: 57px;
-    height: 57px;
     max-height: 57px;
     font-size: 26px;
     line-height: 57px;
   }
 
-  &__facebook {
+  &__icon {
     color: $pink;
     background-color: $yellow;
     transition: all 0.3s ease;
@@ -292,40 +291,9 @@ header {
       color: white;
       background-color: $pink;
     }
-  }
 
-  &__twitter {
-    color: $pink;
-    background-color: $yellow;
-    transition: all 0.3s ease;
-    border-right: 1px solid $pink;
-
-    &:hover {
-      color: white;
-      background-color: $pink;
-    }
-  }
-
-  &__pinterest {
-    color: $pink;
-    background-color: $yellow;
-    transition: all 0.3s ease;
-    border-right: 1px solid $pink;
-
-    &:hover {
-      color: white;
-      background-color: $pink;
-    }
-  }
-
-  &__instagram {
-    color: $pink;
-    background-color: $yellow;
-    transition: all 0.3s ease;
-
-    &:hover {
-      color: white;
-      background-color: $pink;
+    &:last-child {
+      border: none;
     }
   }
 }
@@ -383,24 +351,4 @@ footer .footer-name {
   @media (min-width: $bp-400) {
     margin-bottom: 0;
   }
-}
-
-section .title {
-  position: relative;
-  text-align: center;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 700;
-  margin-bottom: 100px;
-}
-
-section .title::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  bottom: -40px;
-  left: 50%;
-  height: 3px;
-  background: $pink;
-  transform: translateX(-50%);
 }

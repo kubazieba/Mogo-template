@@ -71,14 +71,14 @@ body {
 
 /* line 27, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/_utils.scss */
 a {
-  color: #000000;
+  color: inherit;
   text-decoration: none;
   cursor: pointer;
 }
 
 /* line 33, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/_utils.scss */
 a:hover {
-  color: #000000;
+  color: inherit;
 }
 
 /* line 37, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/_utils.scss */
@@ -235,6 +235,29 @@ input:focus {
 /* line 165, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/_utils.scss */
 .mb-90 {
   margin-bottom: 90px;
+}
+
+/* SECTIONS */
+/* line 171, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/_utils.scss */
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+
+/* line 180, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/_utils.scss */
+section .title::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  bottom: -40px;
+  left: 50%;
+  height: 3px;
+  background: #f38181;
+  transform: translateX(-50%);
 }
 
 /* NAVBAR */
@@ -535,88 +558,51 @@ header {
   min-width: 57px;
   max-width: 57px;
   min-height: 57px;
-  height: 57px;
   max-height: 57px;
   font-size: 26px;
   line-height: 57px;
 }
 
-/* line 285, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
-.social-media__facebook {
+/* line 284, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+.social-media__icon {
   color: #f38181;
   background-color: #fce38a;
   transition: all 0.3s ease;
   border-right: 1px solid #f38181;
 }
 
-/* line 291, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
-.social-media__facebook:hover {
+/* line 290, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+.social-media__icon:hover {
   color: white;
   background-color: #f38181;
 }
 
-/* line 297, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
-.social-media__twitter {
-  color: #f38181;
-  background-color: #fce38a;
-  transition: all 0.3s ease;
-  border-right: 1px solid #f38181;
+/* line 295, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+.social-media__icon:last-child {
+  border: none;
 }
 
-/* line 303, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
-.social-media__twitter:hover {
-  color: white;
-  background-color: #f38181;
-}
-
-/* line 309, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
-.social-media__pinterest {
-  color: #f38181;
-  background-color: #fce38a;
-  transition: all 0.3s ease;
-  border-right: 1px solid #f38181;
-}
-
-/* line 315, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
-.social-media__pinterest:hover {
-  color: white;
-  background-color: #f38181;
-}
-
-/* line 321, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
-.social-media__instagram {
-  color: #f38181;
-  background-color: #fce38a;
-  transition: all 0.3s ease;
-}
-
-/* line 326, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
-.social-media__instagram:hover {
-  color: white;
-  background-color: #f38181;
-}
-
-/* line 333, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 301, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 #team .description:last-child {
   font-weight: 300;
   font-style: italic;
   padding-top: 14px;
 }
 
-/* line 339, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 307, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 #team hr {
   margin-bottom: 24px;
 }
 
 @media (min-width: 768px) {
-  /* line 339, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+  /* line 307, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
   #team hr {
     margin-bottom: 0;
   }
 }
 
 /* FOOTER */
-/* line 349, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 317, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 footer .container {
   display: flex;
   flex-direction: column;
@@ -624,19 +610,19 @@ footer .container {
 }
 
 @media (min-width: 768px) {
-  /* line 349, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+  /* line 317, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
   footer .container {
     justify-content: space-between;
     flex-direction: row;
   }
 }
 
-/* line 360, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 328, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 footer .footer-name {
   color: #000000;
 }
 
-/* line 364, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 332, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .newsletter {
   display: flex;
   flex-direction: column;
@@ -644,13 +630,13 @@ footer .footer-name {
 }
 
 @media (min-width: 400px) {
-  /* line 364, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+  /* line 332, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
   .newsletter {
     flex-direction: row;
   }
 }
 
-/* line 374, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+/* line 342, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
 .newsletter input {
   border-radius: 0;
   padding: 14px;
@@ -662,32 +648,10 @@ footer .footer-name {
 }
 
 @media (min-width: 400px) {
-  /* line 374, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
+  /* line 342, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
   .newsletter input {
     margin-bottom: 0;
   }
-}
-
-/* line 388, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
-section .title {
-  position: relative;
-  text-align: center;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 700;
-  margin-bottom: 100px;
-}
-
-/* line 397, ../../../../../../../../../../../../../Users/codenight-jz/Documents/Projects/Mogo/scss/style.scss */
-section .title::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  bottom: -40px;
-  left: 50%;
-  height: 3px;
-  background: #f38181;
-  transform: translateX(-50%);
 }
 
 /*# sourceMappingURL=style.css.map */
