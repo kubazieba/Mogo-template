@@ -116,10 +116,6 @@
 }
 
 @media (max-width: 1000px) {
-  .container {
-    padding: 0 20px;
-  }
-
   .menu-mobile {
     display: block;
     z-index: 101;
@@ -147,6 +143,12 @@
 
   .navbar .menu.menu-show {
     top: 0;
+  }
+}
+
+@media (max-width: $bp-desktop) {
+  .container {
+    padding: 0 20px;
   }
 }
 
@@ -262,13 +264,12 @@ header {
 }
 
 .social-media {
-  display: flex;
+  display: none;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-  opacity: 0;
 
   & i {
     min-width: 57px;
@@ -338,8 +339,13 @@ header {
 
 footer .container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+
+  @media (min-width: $bp-tablet) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 footer .footer-name {
@@ -348,7 +354,12 @@ footer .footer-name {
 
 .newsletter {
   display: flex;
+  flex-direction: column;
   padding: 10px 0;
+
+  @media (min-width: $bp-400) {
+    flex-direction: row;
+  }
 }
 
 .newsletter input {
@@ -358,6 +369,11 @@ footer .footer-name {
   max-height: 41px;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
+  margin-bottom: 10px;
+
+  @media (min-width: $bp-400) {
+    margin-bottom: 0;
+  }
 }
 
 section .title {

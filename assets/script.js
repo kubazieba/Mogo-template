@@ -22,21 +22,21 @@ $(document).ready(function() {
 
     /* SHOW SOCIAL MEDIA BAR */
     $('.team-image__matthew').on('mouseover', function() {
-        $('.team-image__matthew .social-media').css("opacity", "1");
+        $('.team-image__matthew .social-media').css("display", "flex");
     }).mouseleave(function() {
-        $('.team-image__matthew .social-media').css("opacity", "0");
+        $('.team-image__matthew .social-media').css("display", "none");
     });
     
     $('.team-image__christopher').on('mouseover', function() {
-        $('.team-image__christopher .social-media').css("opacity", "1");
+        $('.team-image__christopher .social-media').css("display", "flex");
     }).mouseleave(function() {
-        $('.team-image__christopher .social-media').css("opacity", "0");
+        $('.team-image__christopher .social-media').css("display", "none");
     });
 
     $('.team-image__michael').on('mouseover', function() {
-        $('.team-image__michael .social-media').css("opacity", "1");
+        $('.team-image__michael .social-media').css("display", "flex");
     }).mouseleave(function() {
-        $('.team-image__michael .social-media').css("opacity", "0");
+        $('.team-image__michael .social-media').css("display", "none");
     });
 });
 
